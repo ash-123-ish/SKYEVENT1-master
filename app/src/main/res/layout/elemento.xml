@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TaskName"
+        android:text="pandal"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TaskDate"
+            android:text="13/NOV/2019"
+            android:layout_weight="1"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TaskCost"
+            android:layout_weight="1"
+            android:text="5000"
+            android:textColor="#D50000"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TaskStatus"
+            android:layout_weight="1"
+            android:text="Completed"
+            android:textColor="#D50000"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</LinearLayout>

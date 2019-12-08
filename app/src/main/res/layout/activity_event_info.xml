@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@mipmap/a"
     tools:context=".event_info">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,18 +23,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Event Name"
+            android:textColor="#FF6D00"
             android:textSize="20dp"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#FF6D00"
             android:hint="event name..."
             android:layout_marginLeft="25dp"
             android:id="@+id/ename"
@@ -42,11 +53,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="25dp"
+            android:textColor="#FF6D00"/>
+
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:hint="Date"
+            android:layout_marginLeft="80dp"
+            android:textColor="#FF6D00"
             android:inputType="number"
             android:id="@+id/edate"
             />
@@ -54,11 +74,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#FF6D00"
             android:text="/"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#FF6D00"
             android:id="@+id/emonth"
             android:hint="Month"
             android:inputType="text"
@@ -67,11 +89,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#FF6D00"
             android:text="/"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#FF6D00"
             android:hint="Year"
             android:id="@+id/eyear"
             android:inputType="number"
@@ -85,6 +109,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:layout_marginLeft="130dp"
+            android:textColor="#FF6D00"
             android:hint="Hour"
             android:id="@+id/ehour"
             android:inputType="number"
@@ -93,17 +119,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#FF6D00"
             android:text=":"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:hint="Minutes"
+            android:textColor="#FF6D00"
             android:id="@+id/eminutes"
             android:inputType="number"
             />
     </LinearLayout>
 
-
-
-</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

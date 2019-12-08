@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/eeee"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleMarginStart="40dp"
+        app:title="Task Information"
+        app:titleTextColor="#ffffff"
+        android:id="@+id/toolbar"
+        android:background="#FF6D00"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tdetails"
+            android:textSize="25dp"
+            android:textColor="#FF6D00"
+            android:hint="Task details...">
+
+        </EditText>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:hint="Date"
+                android:textColor="#FF6D00"
+                android:inputType="number"
+                android:id="@+id/tdate"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#FF6D00"
+                android:text="/"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:id="@+id/tmonth"
+                android:hint="Month"
+                android:textColor="#FF6D00"
+                android:inputType="text"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#FF6D00"
+                android:text="/"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#FF6D00"
+                android:hint="Year"
+                android:id="@+id/tyear"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="pending"
+                android:textOn="completed"
+                android:background="#ff6d00"
+                android:textColor="#ffffff"
+                android:id="@+id/tstatus"
+                />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FF6D00"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="36dp"
+        android:src="@drawable/ic_home"
+        app:rippleColor="#FF6D00"
+        android:onClick="insertTask"
+        android:id="@+id/addGuest"
+        app:fabSize="normal"
+        />
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/cccc"
+    tools:context=".guest_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF6D00"
+        android:id="@+id/toolbar"
+        app:title="Guest Information"
+        app:titleTextColor="#ffffff"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textColor="#FF6D00"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name.."
+            android:textSize="25dp"
+            android:textColor="#FF6D00"
+            android:inputType="text"
+            android:id="@+id/people_name"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textColor="#FF6D00"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your number.."
+            android:inputType="phone"
+            android:textColor="#FF6D00"
+            android:textSize="25dp"
+            android:id="@+id/people_phone"
+            />
+
+
+    </LinearLayout>
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Unmarked"
+            android:textOn="Marked"
+            android:textColor="#ffffff"
+            android:background="#FF6D00"
+            android:id="@+id/people_status"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FF6D00"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="36dp"
+        android:src="@drawable/ic_home"
+        app:rippleColor="#FF6D00"
+        android:onClick="insertPeople"
+        android:id="@+id/addGuest"
+        app:fabSize="normal"
+        />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
