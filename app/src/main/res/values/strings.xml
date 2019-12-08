@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SkyEvent</string>
+    <string-array name="gender">
+        <item>Jaipur</item>
+        <item>Bisalpur</item>
+        <item>Amer</item>
+        <item>Ajmer</item>
+        <item>Ranthambore</item>
+        <item>Baswada</item>
+        <item>Badi</item>
+        <item>Barmer</item>
+        <item>Nagaur</item>
+        <item>Jaisalmer</item>
+        <item>Bikaner</item>
+        <item>Hanumangarh</item>
+        <item>Surat</item>
+        <item>Sujangarh</item>
+        <item>Udaipur</item>
+        <item>Kota</item>
+    </string-array>
+</resources>
