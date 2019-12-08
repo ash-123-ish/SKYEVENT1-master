@@ -156,11 +156,11 @@ public class event_info extends AppCompatActivity {
 
         if(row_ID == -1)
         {
-            Toast.makeText(this,"Data is not inserted",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Event is not created.",Toast.LENGTH_SHORT).show();
         }
         else
         {
-            Toast.makeText(this,"Your data is inserted.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Your Event is created.",Toast.LENGTH_SHORT).show();
 
         }
 
